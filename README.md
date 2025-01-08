@@ -66,7 +66,7 @@ y_pred_probabilities = model.predict(test_images)
 y_pred = np.argmax(y_pred_probabilities, axis=1)
 
 # Dentro do colab foi adicionado o seguinte código para calcular as métricas:
-'''código
+```python
   def calcular_metricas(con_mat):
       # Soma total de todos os elementos
       total = np.sum(con_mat)
@@ -107,4 +107,4 @@ y_pred = np.argmax(y_pred_probabilities, axis=1)
       print(f"  F-Score: {f_score[i]:.2f}")
 
   print(f"\nAcurácia geral: {acuracia:.2f}")
-'''
+
